@@ -2,13 +2,13 @@ export const jsonData = {
     "default": {
       "text": "Hi, I'm Tara, May I help you? Reply with a number from to the options shown to explore further",
       "choices": [
-        {"text": "1 Your Education Boards", "value": "discoverState"},
-        {"text": "2 Comic books", "value": "comicbooks"},
-        {"text": "3 DIKSHA mobile app", "value": "dikshaApp"},
-        {"text": "4 DIKSHA queries", "value": "dikshaQueries"},
+        {"text": "1 Your Education Boards", "value": "1"},
+        {"text": "2 Comic books", "value": "2"},
+        {"text": "3 DIKSHA mobile app", "value": "3"},
+        {"text": "4 DIKSHA queries", "value": "4"},
       ]
     },
-    "discoverState": {
+    "1": {
       "text": "Reply with a number from the options shown to explore further",
       "choices": [
         {"text": "1 Andhra Pradesh", "value": "ds_andhrapradesh"},

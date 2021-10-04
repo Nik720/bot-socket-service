@@ -40,7 +40,8 @@ export class SocketGateway implements OnGatewayInit, OnGatewayConnection, OnGate
   @SubscribeMessage('botRequest')
   async handleMessage(client: Socket, { content, to }: any) {
     this.logger.log({ msg: `Receiving chatbot request for ${to} with ${JSON.stringify(content)} ` });
-    this.appService.requestToAdapter({content, to}, this.server)
+    this.appService.socketServer = this.server;
+    this.appService.handleBotRequest({content, to}, this.server)
     return {}
   }
 
